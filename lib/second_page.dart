@@ -6,7 +6,7 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // kkkkkkصفحة بيضا
+      backgroundColor: Colors.white, // knnnnnnnkkkkkصفحة بيضا
     );
   }
 }
