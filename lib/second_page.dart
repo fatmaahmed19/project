@@ -101,9 +101,9 @@ class _SecondPageState extends State<SecondPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.end, // Aligns bottoms
                     children: [
-                      _buildStepCard(0, "Step 1", "Choose Your\nPath", "Select Analyzer or Skincare Bot"),
-                      _buildStepCard(1, "Step 2", "Smart\nAnalysis", "Our AI detects skin conditions instantly"),
-                      _buildStepCard(2, "Step 3", "Get Your\nRoutine", "Receive a safe, personalized routine"),
+                      _buildStepCard(0, "Step 1", "Choose Your\nPath", "Choose how you’d like to begin: \n 📸 Snap a photo for instant scan 💬 Or answer a few guided questions"),
+                      _buildStepCard(1, "Step 2", "We Understand \n Your Skin", " Our system studies your skin conditionand identifies what truly needs attention — \n gently and accurately."),
+                      _buildStepCard(2, "Step 3", "Get Your\nRoutine", "Receive a routine tailored just for you safe, simple, and designed to improve your skin step by step."),
                     ],
                   ),
                   const SizedBox(height: 110),
