@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'home_screen.dart';
+import 'package:project/second_page.dart';
 import 'login_page.dart';
 
 class SignupPage extends StatefulWidget {
@@ -49,7 +49,7 @@ final FirebaseAuth _auth = FirebaseAuth.instance;
   if (mounted) {
     Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => const HomeScreen()), 
+      MaterialPageRoute(builder: (context) => const SecondPage()), 
       (route) => false,
     );
       }

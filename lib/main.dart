@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart'; 
+import 'package:firebase_core/firebase_core.dart';
+import 'package:project/chatPage.dart';
+import 'package:project/login_page.dart';
+import 'package:project/signup_page.dart'; 
 import 'firebase_options.dart';     
 import 'package:firebase_auth/firebase_auth.dart'; 
 import 'home_screen.dart';        
@@ -24,6 +27,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+    '/login': (context) => const LoginPage(),
+    '/signup': (context) => const SignupPage(),
+    '/chat': (context) => const ChatPage(),
+  },
       debugShowCheckedModeBanner: false,
       // The StreamBuilder listens to Firebase. 
       // If a user exists, it shows HomeScreen. If not, it shows HomePage.
@@ -34,7 +42,7 @@ class MyApp extends StatelessWidget {
             return const Scaffold(body: Center(child: CircularProgressIndicator()));
           }
           if (snapshot.hasData) {
-            return const HomeScreen(); // User is logged in
+            return const SecondPage(); // User is logged in
           }
           return const HomePage(); // User is logged out
         },
